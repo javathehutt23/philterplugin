@@ -1,0 +1,6 @@
+fields:
+    tag:
+        label: Tag
+        span: full
+        required: 1
+        type: text

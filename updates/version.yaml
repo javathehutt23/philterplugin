@@ -1,0 +1,41 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table harryfurnish_philterplugin_image'
+    - builder_table_create_harryfurnish_philterplugin_image.php
+1.0.3:
+    - 'Updated table harryfurnish_philterplugin_image'
+    - builder_table_update_harryfurnish_philterplugin_image.php
+1.0.4:
+    - 'Updated table harryfurnish_philterplugin_image'
+    - builder_table_update_harryfurnish_philterplugin_image_2.php
+1.0.5:
+    - 'Created table harryfurnish_philterplugin_tag'
+    - builder_table_create_harryfurnish_philterplugin_tag.php
+1.0.6:
+    - 'Created table harryfurnish_philterplugin_image_tag'
+    - builder_table_create_harryfurnish_philterplugin_image_tag.php
+1.0.7:
+    - 'Updated table harryfurnish_philterplugin_image'
+    - builder_table_update_harryfurnish_philterplugin_image_3.php
+1.0.8:
+    - 'Drop table harryfurnish_philterplugin_image'
+    - builder_table_delete_harryfurnish_philterplugin_image.php
+1.0.9:
+    - 'Created table harryfurnish_philterplugin_image'
+    - builder_table_create_harryfurnish_philterplugin_image_2.php
+1.0.10:
+    - 'Updated table harryfurnish_philterplugin_image'
+    - builder_table_update_harryfurnish_philterplugin_image_4.php
+1.0.11:
+    - 'Updated table harryfurnish_philterplugin_image'
+    - builder_table_update_harryfurnish_philterplugin_image_5.php
+1.0.12:
+    - 'Updated table harryfurnish_philterplugin_image'
+    - builder_table_update_harryfurnish_philterplugin_image_6.php
+1.0.13:
+    - 'Created table harryfurnish_philterplugin_imagetest'
+    - builder_table_create_harryfurnish_philterplugin_imagetest.php
+1.0.14:
+    - 'Updated table harryfurnish_philterplugin_imagetest'
+    - builder_table_update_harryfurnish_philterplugin_imagetest.php

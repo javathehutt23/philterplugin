@@ -1,0 +1,57 @@
+{% set tag = __SELF__.tag %}
+
+<div class="row">
+	{% flash %}
+		<p><div class="alert alert-{{ type == 'error' ? 'danger' : 'success' }}">{{ message }}</div></p>
+	{% endflash %}
+</div>
+<div class="row">
+	{{ form_open({ request: 'addImage', files: true }) }}
+	<form id="image-form" data-request="addImage" method="post" action="{{ url('image/add') }}"
+	accept-charset="UTF8" class="col col-sm-8 col-md-6" enctype="multipart/form-data">
+		{{ form_token() }}
+		{{ form_sessionKey() }}
+
+		<label for="imageAddName">Name:</label>
+		<input name="name"	type="text"	class="form-control" id="imageAddName"
+			placeholder="Enter your pictures' name" />
+
+		<label for="imageAddDescription">description:</label>
+		<input name="description"	type="text"	class="form-control" id="imageAddDescription"
+		placeholder="Enter your pictures' description" />
+
+		<label for="imageAddImage">Image:</label>
+		<input name="file"	type="file"	class="form-control" id="imageAddImage"
+		accept="image/*" />
+
+		<label for="imageAddFilter">Filter:</label>
+		<select name="filter"	type="text"	class="form-control" id="imageAddFilter">
+			<option value="_1977">1977</option>	<option value="brannan">Brannan</option>
+			<option value="brooklyn">Brooklyn</option> <option value="clarendon">Clarendon</option>
+			<option value="earlybird">Earlybird</option>	<option value="gingham">Gingham</option>
+			<option value="hudson">Hudson</option>	<option value="inkwell">Inkwell</option>
+			<option value="kelvin">Kelvin</option>	<option value="lark">Lark</option>
+			<option value="lofi">Lofi</option>	<option value="maven">Maven</option>
+			<option value="moon">Moon</option>	<option value="nashville">Nashville</option>
+			<option value="perpetua">Perpetua</option>	<option value="reyes">Reyes</option>
+			<option value="rise">Rise</option>	<option value="slumber">Slumber</option>
+			<option value="stinson">Stinson</option>	<option value="toaster">Toaster</option>
+			<option value="valencia">Valencia</option>	<option value="walden">Walden</option>
+			<option value="willow">Willow</option>  <option value="xpro2">X-pro II</option>
+		</select>
+		<!--
+		<select name="cars" id="cars" multiple>
+		adding to allow users to select multiple options
+		-->
+		<label for="imageAddTag">Tags:</label>
+		<select name="tag"	type="text"	class="form-control" id="imageAddTag" multiple>
+			{% for tags in tag %}
+			<option value="{{tags.tag}}">{{tags.tag}}</option>
+			{% endfor %}
+		</select>
+
+		<input class="btn btn-primary" name="submit" type="submit" value="Submit" />
+		<input type="hidden" name="_handler" value="addImage"/>
+	</form>
+	{{ form_close() }}
+</div>

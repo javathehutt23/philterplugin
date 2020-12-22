@@ -1,0 +1,15 @@
+plugin:
+    name: 'harryfurnish.philterplugin::lang.plugin.name'
+    description: 'harryfurnish.philterplugin::lang.plugin.description'
+    author: 'Harry Furnish'
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    tags:
+        label: Tags
+        url: harryfurnish/philterplugin/tags
+        icon: icon-tags
+    main-menu-item-image:
+        label: Images
+        url: harryfurnish/philterplugin/image
+        icon: icon-image

@@ -1,0 +1,10 @@
+name: Tags
+form: $/harryfurnish/philterplugin/models/tag/fields.yaml
+modelClass: HarryFurnish\Philterplugin\Models\Tag
+defaultRedirect: harryfurnish/philterplugin/tags
+create:
+    redirect: 'harryfurnish/philterplugin/tags/update/:id'
+    redirectClose: harryfurnish/philterplugin/tags
+update:
+    redirect: harryfurnish/philterplugin/tags
+    redirectClose: harryfurnish/philterplugin/tags

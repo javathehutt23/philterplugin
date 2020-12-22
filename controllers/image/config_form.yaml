@@ -1,0 +1,10 @@
+name: Image
+form: $/harryfurnish/philterplugin/models/image/fields.yaml
+modelClass: HarryFurnish\Philterplugin\Models\Image
+defaultRedirect: harryfurnish/philterplugin/image
+create:
+    redirect: 'harryfurnish/philterplugin/image/update/:id'
+    redirectClose: harryfurnish/philterplugin/image
+update:
+    redirect: harryfurnish/philterplugin/image
+    redirectClose: harryfurnish/philterplugin/image
